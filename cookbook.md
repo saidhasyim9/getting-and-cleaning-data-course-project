@@ -1,99 +1,95 @@
-# Code Book
+This is the Code Book for `Tidy_Data.txt`
 
-This code book summarizes the resulting data fields in `tidy.txt`.
+# Header
 
-## Identifiers
+* `subject`  
+* `activity`:
+** `WALKING` 
+** `WALKING_UPSTAIRS`
+** `WALKING_DOWNSTAIRS`
+** `SITTING`
+** `STANDING`
+** `LAYING`
 
-* `subject` - The ID of the test subject
-* `activity` - The type of activity performed when the corresponding measurements were taken
+## Test and Tranining Measurements
+* `timeBodyAccelerationMeanX`
+* `timeBodyAccelerationMeanY`
+* `timeBodyAccelerationMeanZ`
+* `timeBodyAccelerationStdX`
+* `timeBodyAccelerationStdY`
+* `timeBodyAccelerationStdZ`
+* `timeGravityAccelerationMeanX`
+* `timeGravityAccelerationMeanY`
+* `timeGravityAccelerationMeanZ`
+* `timeGravityAccelerationStdX`
+* `timeGravityAccelerationStdY`
+* `timeGravityAccelerationStdZ`
+* `timeBodyAccelerationJerkMeanX`
+* `timeBodyAccelerationJerkMeanY`
+* `timeBodyAccelerationJerkMeanZ`
+* `timeBodyAccelerationJerkStdX`
+* `timeBodyAccelerationJerkStdY`
+* `timeBodyAccelerationJerkStdZ`
+* `timeBodyGyroscopeMeanX`
+* `timeBodyGyroscopeMeanY`
+* `timeBodyGyroscopeMeanZ`
+* `timeBodyGyroscopeStdX`
+* `timeBodyGyroscopeStdY`
+* `timeBodyGyroscopeStdZ`
+* `timeBodyGyroscopeJerkMeanX`
+* `timeBodyGyroscopeJerkMeanY`
+* `timeBodyGyroscopeJerkMeanZ`
+* `timeBodyGyroscopeJerkStdX`
+* `timeBodyGyroscopeJerkStdY`
+* `timeBodyGyroscopeJerkStdZ`
+* `timeBodyAccelerationMagnitudeMean`
+* `timeBodyAccelerationMagnitudeStd`
+* `timeGravityAccelerationMagnitudeMean`
+* `timeGravityAccelerationMagnitudeStd`
+* `timeBodyAccelerationJerkMagnitudeMean`
+* `timeBodyAccelerationJerkMagnitudeStd`
+* `timeBodyGyroscopeMagnitudeMean`
+* `timeBodyGyroscopeMagnitudeStd`
+* `timeBodyGyroscopeJerkMagnitudeMean`
+* `timeBodyGyroscopeJerkMagnitudeStd`
+* `frequencyBodyAccelerationMeanX`
+* `frequencyBodyAccelerationMeanY`
+* `frequencyBodyAccelerationMeanZ`
+* `frequencyBodyAccelerationStdX`
+* `frequencyBodyAccelerationStdY`
+* `frequencyBodyAccelerationStdZ`
+* `frequencyBodyAccelerationMeanFreqX`
+* `frequencyBodyAccelerationMeanFreqY`
+* `frequencyBodyAccelerationMeanFreqZ`
+* `frequencyBodyAccelerationJerkMeanX`
+* `frequencyBodyAccelerationJerkMeanY`
+* `frequencyBodyAccelerationJerkMeanZ`
+* `frequencyBodyAccelerationJerkStdX`
+* `frequencyBodyAccelerationJerkStdY`
+* `frequencyBodyAccelerationJerkStdZ`
+* `frequencyBodyAccelerationJerkMeanFreqX`
+* `frequencyBodyAccelerationJerkMeanFreqY`
+* `frequencyBodyAccelerationJerkMeanFreqZ`
+* `frequencyBodyGyroscopeMeanX`
+* `frequencyBodyGyroscopeMeanY`
+* `frequencyBodyGyroscopeMeanZ`
+* `frequencyBodyGyroscopeStdX`
+* `frequencyBodyGyroscopeStdY`
+* `frequencyBodyGyroscopeStdZ`
+* `frequencyBodyGyroscopeMeanFreqX`
+* `frequencyBodyGyroscopeMeanFreqY`
+* `frequencyBodyGyroscopeMeanFreqZ`
+* `frequencyBodyAccelerationMagnitudeMean`
+* `frequencyBodyAccelerationMagnitudeStd`
+* `frequencyBodyAccelerationMagnitudeMeanFreq`
+* `frequencyBodyAccelerationJerkMagnitudeMean`
+* `frequencyBodyAccelerationJerkMagnitudeStd`
+* `frequencyBodyAccelerationJerkMagnitudeMeanFreq`
+* `frequencyBodyGyroscopeMagnitudeMean`
+* `frequencyBodyGyroscopeMagnitudeStd`
+* `frequencyBodyGyroscopeMagnitudeMeanFreq`
+* `frequencyBodyGyroscopeJerkMagnitudeMean`
+* `frequencyBodyGyroscopeJerkMagnitudeStd`
+* `frequencyBodyGyroscopeJerkMagnitudeMeanFreq`
 
-## Measurements
 
-* `tBodyAccMeanX`
-* `tBodyAccMeanY`
-* `tBodyAccMeanZ`
-* `tBodyAccStdX`
-* `tBodyAccStdY`
-* `tBodyAccStdZ`
-* `tGravityAccMeanX`
-* `tGravityAccMeanY`
-* `tGravityAccMeanZ`
-* `tGravityAccStdX`
-* `tGravityAccStdY`
-* `tGravityAccStdZ`
-* `tBodyAccJerkMeanX`
-* `tBodyAccJerkMeanY`
-* `tBodyAccJerkMeanZ`
-* `tBodyAccJerkStdX`
-* `tBodyAccJerkStdY`
-* `tBodyAccJerkStdZ`
-* `tBodyGyroMeanX`
-* `tBodyGyroMeanY`
-* `tBodyGyroMeanZ`
-* `tBodyGyroStdX`
-* `tBodyGyroStdY`
-* `tBodyGyroStdZ`
-* `tBodyGyroJerkMeanX`
-* `tBodyGyroJerkMeanY`
-* `tBodyGyroJerkMeanZ`
-* `tBodyGyroJerkStdX`
-* `tBodyGyroJerkStdY`
-* `tBodyGyroJerkStdZ`
-* `tBodyAccMagMean`
-* `tBodyAccMagStd`
-* `tGravityAccMagMean`
-* `tGravityAccMagStd`
-* `tBodyAccJerkMagMean`
-* `tBodyAccJerkMagStd`
-* `tBodyGyroMagMean`
-* `tBodyGyroMagStd`
-* `tBodyGyroJerkMagMean`
-* `tBodyGyroJerkMagStd`
-* `fBodyAccMeanX`
-* `fBodyAccMeanY`
-* `fBodyAccMeanZ`
-* `fBodyAccStdX`
-* `fBodyAccStdY`
-* `fBodyAccStdZ`
-* `fBodyAccMeanFreqX`
-* `fBodyAccMeanFreqY`
-* `fBodyAccMeanFreqZ`
-* `fBodyAccJerkMeanX`
-* `fBodyAccJerkMeanY`
-* `fBodyAccJerkMeanZ`
-* `fBodyAccJerkStdX`
-* `fBodyAccJerkStdY`
-* `fBodyAccJerkStdZ`
-* `fBodyAccJerkMeanFreqX`
-* `fBodyAccJerkMeanFreqY`
-* `fBodyAccJerkMeanFreqZ`
-* `fBodyGyroMeanX`
-* `fBodyGyroMeanY`
-* `fBodyGyroMeanZ`
-* `fBodyGyroStdX`
-* `fBodyGyroStdY`
-* `fBodyGyroStdZ`
-* `fBodyGyroMeanFreqX`
-* `fBodyGyroMeanFreqY`
-* `fBodyGyroMeanFreqZ`
-* `fBodyAccMagMean`
-* `fBodyAccMagStd`
-* `fBodyAccMagMeanFreq`
-* `fBodyBodyAccJerkMagMean`
-* `fBodyBodyAccJerkMagStd`
-* `fBodyBodyAccJerkMagMeanFreq`
-* `fBodyBodyGyroMagMean`
-* `fBodyBodyGyroMagStd`
-* `fBodyBodyGyroMagMeanFreq`
-* `fBodyBodyGyroJerkMagMean`
-* `fBodyBodyGyroJerkMagStd`
-* `fBodyBodyGyroJerkMagMeanFreq`
-
-## Activity Labels
-
-* `WALKING` (value `1`): subject was walking during the test
-* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
-* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
-* `SITTING` (value `4`): subject was sitting during the test
-* `STANDING` (value `5`): subject was standing during the test
-* `LAYING` (value `6`): subject was laying down during the test
