@@ -88,5 +88,5 @@ Tidy_Data <- aggregate(. ~Subject+Activity, AllData_Activity, mean)
 Tidy_Data <- Tidy_Data[order(Tidy_Data$Subject,Tidy_Data$Activity),]
 
 ## Save the tidy data into a file
-write.table(Tidy_Data, file = "Tidy_Data.txt")
+write.table(Tidy_Data, file = "Tidy_Data.txt", row.names = FALSE)
 
