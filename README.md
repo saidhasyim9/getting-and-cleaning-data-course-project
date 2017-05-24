@@ -4,6 +4,6 @@ This script uses the files from https://d396qusza40orc.cloudfront.net/getdata%2F
 
 # Run the analysis script
 
-***1. Execute the script `run_analysis.R`.
-***2. This script will download the file and unzip it into the working directory
-***3. A tidy data file will be produced out of this
+* 1. Execute the script `run_analysis.R`.
+* 2. This script will download the file and unzip it into the working directory
+* 3. A tidy data file will be produced out of this
