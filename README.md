@@ -7,12 +7,14 @@ This script uses the files from https://d396qusza40orc.cloudfront.net/getdata%2F
 
 The structure of the final outcome is as follow:
 
+`
 Column: feature.txt
 Row: x_train.txt, x_test.txt
 Column: "Subject"
 Row: subject_train.txt, subject_test.txt
 Column: "Activity"
 Row: y_train.txt, y_test.txt --> These will reference to activity_labels.txt
+`
 
 bind X, Y, and Subject training with test sets
 ```X_data <- rbind(X_train, X_test)
@@ -49,14 +51,14 @@ names(AllData_Activity)[563]
 
 ## 4. Appropriately labels the data set with descriptive variable names.
 
-'t' at the beginning is replaced by "time"
+`'t' at the beginning is replaced by "time"
 '(t' is replaced by "(time"
 'f' at the beginning is replaced by "frequency"
 "Acc" is replaced by "Acceleration"
 "Gyro" is replaced by "Gyroscope"
 "Mag" is replaced by "Magnitude"
 "BodyBody" is replaced by "Body"
-
+`
 ```
 names(AllData_Activity) <- gsub("^t", "time", names(AllData_Activity))
 names(AllData_Activity) <- gsub("\\(t", "\\(time", names(AllData_Activity))
