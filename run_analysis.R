@@ -62,7 +62,7 @@ AllData_Activity <- merge(AllData, Activity, by = "Activity")
 
 ## Drop the primary ID "Activity" (first column), and rename back "Activity Description" (last column) to "Activity"
 AllData_Activity<-AllData_Activity[,-1]
-names(AllData_Activity)[563] 
+names(AllData_Activity)[563] <- c("Activity")
 
 ## 4. Appropriately labels the data set with descriptive variable names.
 ##
@@ -89,3 +89,4 @@ Tidy_Data <- Tidy_Data[order(Tidy_Data$Subject,Tidy_Data$Activity),]
 
 ## Save the tidy data into a file
 write.table(Tidy_Data, file = "Tidy_Data.txt")
+
