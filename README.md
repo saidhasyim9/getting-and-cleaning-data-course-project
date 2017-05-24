@@ -51,14 +51,14 @@ names(AllData_Activity)[563]
 
 ## 4. Appropriately labels the data set with descriptive variable names.
 
-`'t' at the beginning is replaced by "time"
+```'t' at the beginning is replaced by "time"
 '(t' is replaced by "(time"
 'f' at the beginning is replaced by "frequency"
 "Acc" is replaced by "Acceleration"
 "Gyro" is replaced by "Gyroscope"
 "Mag" is replaced by "Magnitude"
 "BodyBody" is replaced by "Body"
-`
+```
 ```
 names(AllData_Activity) <- gsub("^t", "time", names(AllData_Activity))
 names(AllData_Activity) <- gsub("\\(t", "\\(time", names(AllData_Activity))
