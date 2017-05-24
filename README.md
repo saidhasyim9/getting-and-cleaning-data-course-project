@@ -9,6 +9,7 @@ The structure of the final outcome is as follow:
 
 `
 Column: feature.txt
+
 Row: x_train.txt, x_test.txt
 Column: "Subject"
 Row: subject_train.txt, subject_test.txt
