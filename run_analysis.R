@@ -89,8 +89,3 @@ Tidy_Data <- Tidy_Data[order(Tidy_Data$Subject,Tidy_Data$Activity),]
 
 ## Save the tidy data into a file
 write.table(Tidy_Data, file = "Tidy_Data.txt")
-
-
-## Create CodeBook
-library(knitr)
-knit2html("codebook.Rmd")
